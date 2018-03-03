@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <title>Hello World</title>
+</head>
+
+<body>
+<div  class="container">
+<h1>Software Engineering Career Tips</h1>
+<img src="img/SESE.jpeg" class="img-rounded" alt="Cinque Terre" width="100%" height="20%">
+<!-- Start point Jumbotron  -->
+<div class="jumbotron"> 
+<h1>To become a successful Mobile App Engineer</h1>      
+    <p> Software Engineering #1 </br>
+ကုိယ့္ အရည္အခ်င္းနဲ. ကုိက္တဲ့ အလုပ္ေခၚစာေတြ.မွ အလုပ္ေလွ်ာက္မယ္ဆုိရင္ ဘယ္ေတာ့မွ အလုပ္ေလွ်ာက္ၿဖစ္မွာ မဟုတ္ပါဘူး။ အလုပ္ေခၚစာမွာ သတ္မွတ္ထားတဲ့ အရည္အခ်င္း အကုန္မရွိလဲ စိတ္ဝင္စားတယ္ဆုိေလွ်ာက္ပါ။ အေသးစိတ္က ညိွလုိ.ရပါတယ္။</p>
+  </div>
+ <!-- End point Jumbotron-->
+  
+<!-- Start point Previous and Next  -->
+  <div class="container">
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+</div>
+<!-- End point Previous and Next  -->
+
+ <form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery3.3.1min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    </div>
+</body>
+
+</html>
